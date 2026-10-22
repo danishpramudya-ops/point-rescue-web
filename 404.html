@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Point Rescue — alamat baru</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://danishpramudya-ops.github.io/pointrescue/">
+<!-- tanpa JavaScript: dialihkan setelah 3 detik -->
+<meta http-equiv="refresh" content="3; url=https://danishpramudya-ops.github.io/pointrescue/">
+<style>
+html{ background:#03101f; color:#eef2f7; font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+body{ min-height:100vh; margin:0; display:grid; place-content:center; text-align:center; padding:24px; }
+b{ letter-spacing:.08em; } em{ font-style:normal; color:#e45a07; } a{ color:#6fb0ff; }
+</style>
+</head>
+<body>
+<p><b>POINT<em>RESCUE</em></b> pindah alamat.</p>
+<p>Mengalihkan ke <a id="a" href="https://danishpramudya-ops.github.io/pointrescue/">danishpramudya-ops.github.io/pointrescue</a> …</p>
+<script>
+/* Alamat lama: /point-rescue-web/…  →  alamat baru: /pointrescue/…  (jalur, query, dan hash ikut terbawa) */
+(function () {
+  var baru = 'https://danishpramudya-ops.github.io/pointrescue/';
+  var sisa = location.pathname.replace(/^\/point-rescue-web\/?/, '');
+  var ke = baru + sisa + location.search + location.hash;
+  document.getElementById('a').href = ke;
+  location.replace(ke);
+})();
+</script>
+</body>
+</html>
